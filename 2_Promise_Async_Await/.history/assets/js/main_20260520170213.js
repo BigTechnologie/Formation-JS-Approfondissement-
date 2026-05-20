@@ -1,0 +1,126 @@
+// ===============================
+// Exemple avec Promise, async / await
+// ===============================
+
+// Déclaration d'une fonction fléchée nommée getData
+// Cette fonction va simuler un appel asynchrone (API, base de données, etc.)
+const getData = ()=>{
+
+    // La fonction retourne une Promise
+    // Une Promise représente une opération asynchrone qui peut réussir (resolve)
+    // ou échouer (reject)
+    // Promise est un constructeur en JavaScript qui prend une fonction (appelée executor). Cette fonction est immédiatement exécutée par le moteur JS. Elle prend 2 paramètres obligatoires :
+    // resolve → fonction à appeler si l’opération réussit. reject → fonction à appeler si l’opération échoue 
+    return new Promise((resolve, reject)=>{ 
+
+        // setTimeout permet de simuler un délai (ex: appel réseau)
+        // Ici : 10 secondes avant de retourner les données
+        setTimeout(()=>{
+            //const success = false; // simulation d'erreur // A la console on n'aura : Uncaught (in promise) Erreur : impossible de récupérer les données 
+            let success = true;
+            if(success) {
+            
+            resolve([
+                {
+                    name: "4 Fromages",
+                    description: "Sauce tomate à l'origan ou crème fraîche légère, mozzarella, fromage de chèvre, emmental et Fourme d'Ambert AOP",
+                    price: 2999,
+                    soldPrice: 1999,
+                    category: "pizza homme",
+                    image: "/assets/images/pizza/4-fromages.jpg"
+                },
+                {
+                    name: "BPM",
+                    description: "Sauce barbecue, mozzarella, haché au bœuf, filet de poulet rôti et merguez",
+                    price: 2599,
+                    soldPrice: 1299,
+                    category: "pizza homme",
+                    image: "/assets/images/pizza/bpm.jpg"
+                },
+                {
+                    name: "Pepperoni Lovers",
+                    description: "Sauce tomate à l'origan, mozzarella et saucisse pepperoni",
+                    price: 3599,
+                    soldPrice: 1399,
+                    category: "pizza homme",
+                    image: "/assets/images/pizza/pepperoni.jpg"
+                },
+                {
+                    name: "Queen",
+                    description: "Sauce tomate à l'origan, mozzarella, jambon et champignons frais",
+                    price: 2599,
+                    soldPrice: 1299,
+                    category: "pizza homme",
+                    image: "/assets/images/pizza/queen.jpg"
+                },
+                {
+                    name: "Montagnarde",
+                    description: "Crème fraîche légère, mozzarella, jambon cru, fromage à raclette et champignons frais",
+                    price: 2599,
+                    soldPrice: 1255,
+                    category: "pizza homme",
+                    image: "/assets/images/pizza/montagnarde.jpg"
+                },
+                {
+                    name: "Suprême",
+                    description: "Sauce tomate à l'origan ou crème fraîche légère, mozzarella, fromage de chèvre, emmental et Fourme d'Ambert AOP",
+                    price: 4599,
+                    soldPrice: 1499,
+                    category: "pizza homme",
+                    image: "/assets/images/pizza/supreme.jpg"
+                },
+                {
+                    name: "Raclette",
+                    description: "Crème fraîche légère, mozzarella, pommes de terre, lardons et fromage à raclette",
+                    price: 3599,
+                    soldPrice: 1399,
+                    category: "pizza homme",
+                    image: "/assets/images/pizza/raclette.jpg"
+                },
+                {
+                    name: "Chèvre Miel",
+                    description: "Crème fraîche légère, mozzarella, fromage de chèvre, miel",
+                    price: 2999,
+                    soldPrice: 1199,
+                    category: "pizza homme",
+                    image: "/assets/images/pizza/chevre-miel.jpg"
+                },
+                {
+                    name: "Chicken Barbecue",
+                    description: "Sauce barbecue, mozzarella, filet de poulet rôti, oignons rouges frais, champignons frais et poivrons verts frais",
+                    price: 2999,
+                    soldPrice: 1399,
+                    category: "pizza homme",
+                    image: "/assets/images/pizza/chicken-barbecue.jpg"
+                },
+                {
+                    name: "Orientale",
+                    description: "Sauce tomate à l'origan, mozzarella, merguez et champignons frais",
+                    price: 2999,
+                    soldPrice: 1999,
+                    category: "pizza homme",
+                    image: "/assets/images/pizza/orientale.jpg"
+                },
+                {
+                    name: "Margherita",
+                    description: "Sauce tomate à l'origan et mozzarella",
+                    price: 2999,
+                    soldPrice: 1399,
+                    category: "pizza homme",
+                    image: "/assets/images/pizza/margherita.jpg"
+                },
+                {
+                    name: "Nordique",
+                    description: "Crème fraîche légère, mozzarella et saumon fumé de Norvège",
+                    price: 3999,
+                    soldPrice: 1499,
+                    category: "pizza homme",
+                    image: "/assets/images/pizza/nordique.jpg"
+                }
+            ])
+            } else {
+                reject("Erreur : impossible de récupérer les données");
+            }
+        },10000)  // délai de 10 secondes avant la résolution de la Promise
+    })
+}
