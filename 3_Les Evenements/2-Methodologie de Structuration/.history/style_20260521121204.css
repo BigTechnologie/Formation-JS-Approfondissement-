@@ -1,0 +1,6 @@
+section#html article:nth-child(2) {
+    background-color: black;
+    color: white;
+    font-size: 2.1rem;
+    border: 2px solid red;
+}

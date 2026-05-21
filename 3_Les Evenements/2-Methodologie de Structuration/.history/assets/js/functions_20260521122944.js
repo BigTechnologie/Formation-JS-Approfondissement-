@@ -1,0 +1,21 @@
+const h2 = document.querySelector('#html h2');
+
+// Création d'un objet qui va contenir mes fonctions listeners
+const listenerFunction = {
+
+}
+
+
+
+const listenerFunction = () => {
+    
+    //window.alert("Click détecté sur la balise H2");
+
+    console.log("Click détecté sur la balise H2");
+
+    h2.removeEventListener('bblclick', listenerFunction)
+}
+
+//h2.addEventListener('dblclick', listenerFunction);
+h2.addEventListener('click', listenerFunction);
+

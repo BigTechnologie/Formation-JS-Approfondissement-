@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traitement Async</title>
+    <link rel="stylesheet" href="">
+    <script>
+        console.log("Debut");
+
+        setTimeout(() => {
+            console.log("Traitement terminé");
+        }, 2000);
+
+        console.log("Fin");
+
+        // Création d'une promesse
+        const promesse = new Promise((resolve, reject) => {
+            //let success = true;
+            let success = false;
+            if(success) {
+                resolve("Opération réussie");
+            } else {
+                reject("Erreur");
+            }
+        });
+
+        // Utilisation avec .then() et .catch()
+        promesse
+            .then((resultat) => {
+                console.log(resultat);
+            })
+            .catch((erreur) => {
+                console.log(erreur)
+            });
+
+            
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
