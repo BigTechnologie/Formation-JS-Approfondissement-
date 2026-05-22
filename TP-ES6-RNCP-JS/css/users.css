@@ -1,0 +1,38 @@
+* {
+	font-family: arial;
+	font-size: 15px;
+}
+
+
+table{
+	margin: 20px auto;
+border: 3px solid black;
+}
+td {
+	text-align : center;
+	padding: 5px;
+	font-weight: bold;
+	border: 1px solid black;
+	
+}
+
+tr{
+	text-transform: capitalize;
+	
+}
+
+#family{
+	cursor: pointer;
+}
+#family:hover{
+	background-color: rgb(96, 137, 194);
+}
+
+#given{
+	cursor: pointer;
+}
+
+#given:hover{
+	background-color: rgb(96, 137, 194);
+}
+

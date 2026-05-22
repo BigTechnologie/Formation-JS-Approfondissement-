@@ -1,0 +1,41 @@
+
+
+*{
+    font-family: comic sans ms;
+	
+}
+
+
+
+
+.logo{
+    margin: 0 auto;
+    display: block;
+    width: 600px;
+}
+
+.user{
+    width: 200px;
+    margin-right:250px;
+    margin-bottom: 50px;
+    
+}
+.user:hover{
+    border: 1px solid black;
+    border-radius: 25px;
+}
+.book{
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+.book:hover{
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+div{
+    
+ text-align: center;
+    padding-top: 100px;
+}

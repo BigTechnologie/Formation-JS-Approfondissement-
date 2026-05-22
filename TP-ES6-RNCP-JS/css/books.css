@@ -1,0 +1,17 @@
+﻿* {
+	font-family: arial;
+	font-size: 15px;
+}
+
+#out {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	padding: 60px;
+}
+
+
+
+p {
+	margin: 10px;
+}
