@@ -1,0 +1,43 @@
+// ===============================
+// Exemple async / await
+// ===============================
+
+// Cette fonction simule un appel asynchrone (API, BDD, etc.)
+
+
+// Déclaration d'une fonction asynchrone avec async permettant retourner les données
+const useData = async () => {
+    const data = await getData()
+
+    // Récupération de lélément HTML ayant l'id "app" dans index.html
+    const app = document.getElementById('app')
+
+    app ? app.innerHTML = "" : null
+
+    data.forEach(product => {
+        // Création d'un Template HTML dynamique avec les données du produit
+        // Exemple : price = 0.1 + 0.2 = 0.300000000.....4 => Inacceptable 
+        const productItem = `
+            <div class="product-item">
+                <img src="${product.image}" width="150" alt="">
+                <div class="product-details">
+                    <div class="product-name">${product.name}</div>
+                    <div>
+                        <span class="sold-price">${product.soldPrice/100}</span>
+                        <span class="regular-price"><del>${product.price/100}</del></span>
+                    </div>
+                </div>
+            </div>
+        `
+
+        // Ajout du produit au DOM => Ajouter le HTML géneré dans l'élément "app"
+        app.innerHTML += productItem
+        //console.log(productItem);
+
+    });
+
+}
+
+useData();
+
+

@@ -1,0 +1,4 @@
+1- Les réponses informatives (100 - 199)
+2- Les réponses de succès (200 - 299)
+3- Les redirections (300 - 399)
+4- Les erreurs du client (400 - 499)
