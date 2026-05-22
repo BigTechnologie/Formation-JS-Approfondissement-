@@ -10,19 +10,12 @@ const request = location.origin + '/api/pizza.json';
 
 // Définition de ma fonction asynchrone pour recuperer les données
 const getPizzaData = async () => {
-    let response = await fetch(request)
-
-    let pizzas = await response.json()
-
-    return pizzas;
-    //console.log(pizzas)
-
+    let response = 
 }
 
 // Déclaration d'une fonction asynchrone avec async permettant retourner les données
 const useData = async () => {
-
-    const data = await getPizzaData()
+    const data = await getData()
 
     // Récupération de lélément HTML ayant l'id "app" dans index.html
     const app = document.getElementById('app')

@@ -21,8 +21,8 @@ const getPizzaData = async () => {
 
 // Déclaration d'une fonction asynchrone avec async permettant retourner les données
 const useData = async () => {
-
-    const data = await getPizzaData()
+    
+    const data = await getData()
 
     // Récupération de lélément HTML ayant l'id "app" dans index.html
     const app = document.getElementById('app')
