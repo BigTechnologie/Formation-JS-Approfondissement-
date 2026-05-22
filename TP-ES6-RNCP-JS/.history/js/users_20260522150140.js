@@ -1,0 +1,7 @@
+"use stricte";
+
+let users = new Users();
+
+// Construction de la table (EN-TETE)
+Users.builTable();
+
