@@ -40,27 +40,9 @@ class Books {
             // Image du livre
             const img = new Image(200, 200);
 
-            // Construction dynamique de l'URL de l'image. Exemple :book_3.jpg
-            img.src = `${URL_BASE_IMG}_${livre.id}.jpg`;
+            // Construction dynamique de l'URL de l'image : book_3
 
-            // Texte alternatif pour l'accessibilité du web
-            img.alt = livre.title;
-
-            // Ajout du livre dans la div
-            div.appendChild(img);
-
-            // Titre du livre
-            const p = document.createElement('p');
-
-            p.textContent = livre.title;
-
-            div.appendChild(p);
-
-            // Insertion dans le DOM
-            out.appendChild(div);
-
-
-        });
+        })
     }
 
 }

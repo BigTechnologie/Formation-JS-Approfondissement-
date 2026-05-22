@@ -47,17 +47,10 @@ class Books {
             img.alt = livre.title;
 
             // Ajout du livre dans la div
-            div.appendChild(img);
+            div.appendChild(imag);
 
             // Titre du livre
-            const p = document.createElement('p');
-
-            p.textContent = livre.title;
-
-            div.appendChild(p);
-
-            // Insertion dans le DOM
-            out.appendChild(div);
+            const
 
 
         });

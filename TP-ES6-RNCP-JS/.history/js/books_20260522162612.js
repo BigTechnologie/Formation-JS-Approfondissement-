@@ -13,4 +13,4 @@ async function initBooks() {
     }
 }
 
-initBooks();
+initBooks

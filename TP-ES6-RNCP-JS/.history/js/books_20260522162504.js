@@ -7,10 +7,8 @@ async function initBooks() {
         await books.load();
 
         // Construction de l'affichage
-        books.buidDiv();
+        books.
     } catch (error) {
-        console.error('Problème serveur', error);
+        
     }
 }
-
-initBooks();

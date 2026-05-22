@@ -9,8 +9,6 @@ async function initBooks() {
         // Construction de l'affichage
         books.buidDiv();
     } catch (error) {
-        console.error('Problème serveur', error);
+        console.error('Problème serveur', err)
     }
 }
-
-initBooks();

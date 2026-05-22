@@ -47,7 +47,7 @@ class Books {
             img.alt = livre.title;
 
             // Ajout du livre dans la div
-            div.appendChild(img);
+            div.appendChild(imag);
 
             // Titre du livre
             const p = document.createElement('p');

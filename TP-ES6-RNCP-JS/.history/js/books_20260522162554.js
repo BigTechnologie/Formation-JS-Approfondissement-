@@ -12,5 +12,3 @@ async function initBooks() {
         console.error('Problème serveur', error);
     }
 }
-
-initBooks();
