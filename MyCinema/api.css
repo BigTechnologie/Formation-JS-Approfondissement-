@@ -1,0 +1,15 @@
+a {
+    text-decoration: none!important;
+    color: initial!important;
+    transition: 0.3s;
+}
+
+#loading {
+    display: none;
+    width: 100px;
+    margin: auto;
+}
+
+a:hover {
+    background-color: azure;
+}
